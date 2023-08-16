@@ -1,0 +1,14 @@
+{
+  "he": {
+    "currency": "{{value, currency(ILS), number(minimumFractionDigits: 2, maximumFractionDigits: 2)}}",
+    "welcomeBack": "ברוך שובך",
+    "howWasYourDay": "איך עבר עליך היום?",
+    "email": "אימייל",
+    "password": "סיסמה",
+    "forgotYourPassword": "שכחת ססמה?",
+    "membershipLink": "אין לך חברות? <link>הגש בקשה בחינם</link>",
+    "applyForFree": "הגש בקשה בחינם",
+    "signIn": "להתחבר",
+    "loginByPhoneNumber": "כניסה באמצעות מספר טלפון"
+  }
+}

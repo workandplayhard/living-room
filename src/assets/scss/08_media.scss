@@ -1,0 +1,88 @@
+@use "sass:math";
+
+$main-font-size: 16px;
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+  @return $number;
+}
+
+/// Convert value to em.
+@function rem($value, $font-size: $main-font-size) {
+  @return math.div(strip-unit($value), strip-unit($font-size)) + rem;
+}
+
+/*Ussage:
+font-size:rem(32, 16); // => font-size:2rem;
+*/
+
+
+
+@media screen and (max-width: 1340px) {
+  //width: 1600px
+  html {
+    font-size: 15px;
+  }
+
+  
+}
+
+@media screen and (max-width: 1250px) {
+  //width: 1440px
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  //width: 1200px
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  //width: 1200px
+  html {
+    font-size: 12px;
+  }
+
+}
+
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 16px;
+  }
+  
+}
+
+@media screen and (max-width: 810px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  html {
+    font-size: 13px;
+  }
+  
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+  
+}
+
+/*
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 400px) {
+
+}*/
